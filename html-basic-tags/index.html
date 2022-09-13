@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
+        <title>on the page title tab</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Don Welch">
         <!--
             this structure is a comment block in html files
             everything in this structure is NOT considered part of any
@@ -21,9 +24,7 @@
                 to the page, indicate charactersets, help with search engines,
                 and many other assists.
         -->
-        <title>on the page title tab</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Don Welch">
+        
     </head>
     <body>
         <!--
@@ -55,6 +56,40 @@
             html file.
         </p>
         <p>This is a second paragraph on the browser page. It will start a new line. 
-            Did the Go Live update the browser display of my saved changes to the file?</p>
+            Did the Go Live update the browser display of my saved changes to the file?
+        </p>
+        <!--
+            if you wish to use a component of a reserved tag (or the whole tag)
+                you would be in trouble using the tag
+            instead: you can use special character strings to represent components
+                        of the tag such as < (&lt;) and the > (&gt;) symbols
+        -->
+        <h3>List tags: &lt;ol&gt; and &lt;ul&gt;</h3>
+        <!-- block tag
+                create an ordered list (numbered) using <ol>
+                create an unordered list (bulleted) using <ul>
+                items in the list are indicated using the line item <li>
+                lists can be nested and mixed
+        -->
+        <p>Add extension Live Server for Go Live execution within VSC</p>
+        <ol>
+            <li>Open VSC and select your extension icon</li>
+            <li>Select (if seen) or search for Live Server in the extension list</li>
+            <li>Press the install button</li>
+            <li>After the install, check blue bottom status line right corner for 
+                the button text Go Live
+            </lI>
+            <li>To use Go Live
+                <ul>
+                    <li>open an html file</li>
+                    <li>make any adjustments to your page</li>
+                    <li>save the changes</li>
+                    <li>press Go Live</li>
+                </ul>
+            </li>
+
+        </ol>
+
+
     </body>
 </html>
