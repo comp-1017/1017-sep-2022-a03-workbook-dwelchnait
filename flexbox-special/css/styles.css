@@ -1,0 +1,86 @@
+body {
+	background-color: white;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+main{
+	background-color: lightgray;
+	display: flex;
+	
+	border: 2px solid black;
+}
+
+.flexarea{
+	display: flex;
+}
+/**********************************************
+margin and padding is top right bottom left
+**********************************************/
+.asidesize{
+	margin: 10px 0 10px 10px;
+	width:150px;
+	height: 600px;
+	border: 2px solid black;
+}
+
+/***********************************************
+criteria
+margin 10px between outter edges and boxes (red,blue and green)
+margin 10px between inner the boxes (red,greem and blue)
+border of 2px around boxes and main
+
+calculation of width for blue and green, red given as 150px
+
+960 = column 1 + column 2 + right margin/main borders
+960 = (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm) + 10 + 2 + 2
+960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + (10 + 2 + 0 + content + 0 + 2 + 0) + 14
+960 = 192 + content
+960 - 192 = content
+768 = content
+
+the height of the right column items can use a similar
+	calculation as the horizontal width layout
+
+the one item you MUST remmber is that the vertical margin (VM)
+	bewteen items are collapsed
+
+the largest VM i use between any two single items
+
+aside is 600 px
+
+600 = 2(tb + tp + content + bp + bb) + VM
+600 = 2(2 + 0 + content + 0 + 2) + 10
+600 = 2 * 4 + 10 + 2 * content
+600 = 18 + 2 * content
+582 /  2 = content
+291 = content
+
+this ONLY works because the content area height is the same and
+	the vertical margin is the same
+
+NORMALLY vertical height is determined by the content of the area.
+************************************************/
+.contentsize{
+	margin: 10px 0 10px 10px;
+	width: 768px;
+	border: 2px solid black;
+	height: 291px;
+}
+
+.red-paint{
+	background-color: red;
+}
+
+.blue-paint{
+	background-color: blue;
+}
+
+.green-paint{
+	background-color: green;
+}

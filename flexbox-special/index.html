@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>2 Columns using flexbox</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Don Welch">
+        <!-- since there is no text styling within this demo, the reset
+            style is not really necessary and can be commented
+            out
+        <link href="css/reset.css" rel="stylesheet">-->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <h1>Flexbox 2 Column</h1>
+        </header>
+        <!-- display flexbox on main-->
+        <main class="flexarea">
+            <!-- column one-->
+            <div class="asidesize red-paint"></div>
+            <!-- column two-->
+            <div>
+                <!-- the items within this div are NOT immediately
+                    use main
+                     the items within this div are immediately under
+                    the div
+                     these items are NOT affected by the main flexbox
+                     therefore these items are by default "stacked"
+                -->
+                <div class="blue-paint contentsize"></div>
+                <div class="green-paint contentsize"></div>
+            </div>
+        </main>
+
+        </div>
+    </body>
+</html>
